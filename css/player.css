@@ -1,0 +1,35 @@
+#miniPlayer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 260px;
+  background: #f8f0ff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  font-family: sans-serif;
+  z-index: 9999;
+  padding: 10px;
+  cursor: grab;
+}
+
+#miniHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+#miniControls button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#miniBody {
+  margin-top: 8px;
+}
+
+#miniPlayer.minimized #miniBody {
+  display: none;
+}
